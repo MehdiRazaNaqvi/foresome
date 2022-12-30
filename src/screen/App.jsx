@@ -2,22 +2,25 @@
 
 import { Button, Form, FormGroup, Input, FormText } from 'reactstrap';
 
-import "./style/app.css"
-import "./style/screen3.css"
-import Logo from "./images/logo.png"
-import Download1 from "./images/download1.png"
-import Download2 from "./images/download2.png"
-import Mobile1 from "./images/mobile1.png"
-import Mobile2 from "./images/mobile4.svg"
-import Mobile3 from "./images/mobile3.svg"
-import Mobile4 from "./images/mobile4.png"
+import "../style/app.css"
+import "../style/screen3.css"
+import Logo from "../images/logo.png"
+import Download1 from "../images/download1.png"
+import Download2 from "../images/download2.png"
+import Mobile1 from "../images/mobile1.png"
+import Mobile2 from "../images/mobile4.svg"
+import Mobile3 from "../images/mobile3.svg"
+import Mobile4 from "../images/mobile4.png"
+import Hockey from "../images/hockey.svg"
 
-import Hockey from "./images/hockey.svg"
-
+import { useNavigate } from 'react-router-dom';
 
 
 
 const App = () => {
+
+
+  const navigate = useNavigate()
 
 
   return (
@@ -25,14 +28,15 @@ const App = () => {
 
     <div className="foresome_base">
 
+      
 
       <div className="foresome_home_navbar">
 
         <img className="logo" src={Logo} />
 
-      
 
-        <div className="download_img_div download_img_screen_div" style={{ width: "min-content",height:"100%" }}>
+
+        <div className="download_img_div download_img_screen_div" style={{ width: "min-content", height: "100%" }}>
           <img className="download_img_screen" src={Download1} />
           <img className="download_img_screen" src={Download2} />
         </div>
@@ -97,7 +101,7 @@ const App = () => {
             <span className='miniscreen1_heading'>Join Local tee Times</span>
             <span className='page2_text' style={{ width: "100%", paddingBottom: "1.5rem" }}>Never play alone again, find your next golf partner on Foresome anytime anywhere</span>
 
-            <Button color="success" style={{ width: "70%" }}>Join Now</Button>
+            <Button onClick={() => navigate("/waitlist")} color="success" style={{ width: "70%" }}>Join Now</Button>
 
           </span>
 
@@ -114,7 +118,7 @@ const App = () => {
             <span className='miniscreen1_heading'>Find Golfers Anywhere</span>
             <span className='page2_text' style={{ width: "100%", paddingBottom: "1.5rem" }}>Enter parameters such as GHIN, pace of play, gambling preference, dinking preference and more</span>
 
-            <Button color="success" style={{ width: "70%" }}>Join Now</Button>
+            <Button onClick={() => navigate("/waitlist")} color="success" style={{ width: "70%" }}>Join Now</Button>
 
           </span>
           <img src={Mobile3} style={{ width: "30%", height: "30rem" }} />
