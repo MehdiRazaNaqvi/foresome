@@ -52,7 +52,7 @@ const App = () => {
                 <h1 className="screen1_heading">Join the waitlist and be the first to be notified once we've launched</h1>
 
 
-                <Form onSubmit={(e) => { e.preventDefault(); navigate("/thankyou") }} className="waitlist_input">
+                <Form onSubmit={(e) => { e.preventDefault(); navigate("/foresome/thankyou") }} className="waitlist_input">
 
 
                     <FormGroup className="formgroup">

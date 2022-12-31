@@ -30,7 +30,7 @@ const App = () => {
             <span className="thankyou_text">We will notify you as soon as we've launched.</span>
             <span style={{ marginBottom: "2rem" }} className="thankyou_text">You will get only access before the general public.</span>
 
-            <Button style={{ width: "20%", color: "rgba(23, 107, 58, 1)" }} color="light" onClick={() => navigate("/")}>Home</Button>
+            <Button style={{ width: "20%", color: "rgba(23, 107, 58, 1)" }} color="light" onClick={() => navigate("/foresome")}>Home</Button>
 
 
 

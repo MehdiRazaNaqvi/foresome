@@ -20,9 +20,9 @@ const App = () => {
             <Router>
                 <Routes>
 
-                    <Route element={<Home />} path="/" />
-                    <Route element={<Waitlist />} path="/waitlist" />
-                    <Route element={<Thankyou />} path="/thankyou" />
+                    <Route element={<Home />} path="/foresome" />
+                    <Route element={<Waitlist />} path="foresome/waitlist" />
+                    <Route element={<Thankyou />} path="foresome/thankyou" />
                 </Routes>
             </Router>
 

@@ -80,8 +80,6 @@ body {
 
 
 
-
-
 /* PAGE */
 
 
@@ -127,7 +125,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* background-color: red; */
 }
+
+.front_screen {
+
+    width: 35%;
+
+}
+
+
+
+
 
 
 
@@ -421,20 +431,3 @@ body {
     font-size: 30px;
     font-family: Roboto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    

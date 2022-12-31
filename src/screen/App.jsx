@@ -12,6 +12,7 @@ import Mobile2 from "../images/mobile4.svg"
 import Mobile3 from "../images/mobile3.svg"
 import Mobile4 from "../images/mobile4.png"
 import Hockey from "../images/hockey.svg"
+import CurveMobile from "../images/curveMobile.png"
 
 import { useNavigate } from 'react-router-dom';
 
@@ -61,9 +62,9 @@ const App = () => {
         </div>
 
 
-        <div className="screen1_right">
+        <div className="screen1_right front_screen">
 
-          <img src={Mobile1} className="mobile1" />
+          <img src={CurveMobile} className="mobile1 double_mobile" />
 
         </div>
 
@@ -101,7 +102,7 @@ const App = () => {
             <span className='miniscreen1_heading'>Join Local tee Times</span>
             <span className='page2_text' style={{ width: "100%", paddingBottom: "1.5rem" }}>Never play alone again, find your next golf partner on Foresome anytime anywhere</span>
 
-            <Button onClick={() => navigate("/waitlist")} color="success" style={{ width: "70%" }}>Join Now</Button>
+            <Button onClick={() => navigate("/foresome/waitlist")} color="success" style={{ width: "70%" }}>Join Now</Button>
 
           </span>
 
@@ -118,7 +119,7 @@ const App = () => {
             <span className='miniscreen1_heading'>Find Golfers Anywhere</span>
             <span className='page2_text' style={{ width: "100%", paddingBottom: "1.5rem" }}>Enter parameters such as GHIN, pace of play, gambling preference, dinking preference and more</span>
 
-            <Button onClick={() => navigate("/waitlist")} color="success" style={{ width: "70%" }}>Join Now</Button>
+            <Button onClick={() => navigate("/foresome/waitlist")} color="success" style={{ width: "70%" }}>Join Now</Button>
 
           </span>
           <img src={Mobile3} style={{ width: "30%", height: "30rem" }} />
